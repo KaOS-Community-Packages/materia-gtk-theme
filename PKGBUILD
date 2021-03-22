@@ -1,6 +1,6 @@
 pkgname=materia-theme
 pkgver=20210322
-pkgrel=1
+pkgrel=2
 pkgdesc="Materia theme for GTK"
 arch=('any')
 url="https://github.com/nana-4/materia-theme"
@@ -14,8 +14,7 @@ md5sums=('d822cfab25b0d3c6a750b09e14d7aa18')
 package() {
 	cd ${srcdir}/$pkgname-$pkgver
 	meson "build" \
-		-Dprefix="${pkgdir}/usr" \
-		-Dgnome_shell_version=3.24
+		-Dprefix="${pkgdir}/usr"
 	ninja -C "build" install
 }
 
