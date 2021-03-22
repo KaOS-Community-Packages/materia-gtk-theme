@@ -1,5 +1,5 @@
-pkgname=materia-gtk-theme
-pkgver=20200916
+pkgname=materia-theme
+pkgver=20210322
 pkgrel=1
 pkgdesc="Materia theme for GTK"
 arch=('any')
@@ -9,7 +9,7 @@ depends=('gtk3' 'gtk-engine-murrine')
 makedepends=('git' 'sassc' 'meson')
 options=(!strip)
 source=("https://github.com/nana-4/${pkgname}/archive/v${pkgver}.tar.gz")
-md5sums=('c9c9f2851c9677879801a7e04b8d3643')
+md5sums=('d822cfab25b0d3c6a750b09e14d7aa18')
 
 package() {
 	cd ${srcdir}/$pkgname-$pkgver
